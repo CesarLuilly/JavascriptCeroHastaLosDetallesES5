@@ -1,0 +1,11 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# MarkdownSyntax\r\n\r\n*Texto en cursiva*\r\n\r\n_Texto en cursiva_\r\n\r\n**Texto en negrita**\r\n\r\n__Texto en negrita__\r\n\r\n***Texto en cursiva y negrita***\r\n\r\n___Texto en cursiva y negrita___\r\n\r\n\r\n~~Este texto está tachado.~~ Pero este no.\r\n\r\n\r\n\r\n# Título 1\r\n## Título 2\r\n### Título 3\r\n#### Título 4\r\n##### Título 5\r\n###### Título 6\r\n\r\n\r\n\r\nTítulo 1\r\n=\r\nTítulo 2\r\n-\r\n\r\n\r\n>Este es un **fragmento con comillas**.\r\n>El fragmento continúa aquí.\r\n\r\n>Este es otro **fragmento con comillas**.\r\nEste fragmento continúa en la siguiente línea.\r\n\r\nEsta línea ya no está sangrada.\r\n\r\n\r\n- Elemento de la lista 1\r\n- Elemento de la lista 2\r\n- Elemento de la lista 3\r\n\r\n\r\n1. Elemento de la lista 1\r\n2. Elemento de la lista 2\r\n3. Elemento de la lista 3\r\n\r\n\r\n[ ] A\r\n[x] B\r\n[ ] C\r\n\r\n\r\nEsto es `código`.\r\n\r\n\r\n``Todo esto es `código`.``\r\n\r\n\r\nAquí todavía continúa el texto.\r\n  Esta es la primera línea del bloque de código.\r\n     La segunda línea tiene aún más sangría.\r\n  Esta es otra línea del bloque de código.\r\nAquí vuelve a empezar el texto.\r\n\r\n\r\n```html\r\n<html>\r\n  <head>\r\n  </head>\r\n</html>\r\n```  \r\n\r\n\r\nA continuación se muestra un [Link](https://ejemplo.com/ \"Título opcional del enlace\").\r\n\r\n\r\n<https://ejemplo.com>\r\n`https://ejemplo.com`\r\n\r\n\r\n![Esta es una imagen de ejemplo](https://ejemplo.com/imagen.jpg)\r\n\r\n\r\n[![Esta es una imagen de ejemplo](https://ejemplo.com/imagen.jpg)](https://ejemplo.com)\r\n\r\n\r\n|Columna 1|Columna 2|\r\n|--------|--------|\r\n|    A    |    B    |\r\n|    C    |    D    |\r\n\r\n\r\nPuedes colocar [^1] notas en el pie de página [^2] fácilmente.\r\n[^1]: Aquí encuentras el texto de la nota al pie de página.\r\n[^2]: **Las notas de pie de página** pueden *formatearse* también.\r\nEstas pueden ocupar varias líneas.\r\n\r\n\r\nA & B\r\n&alpha;\r\n1 < 2\r\n<p>\r\n\r\n  \r\nEsto es un \\*ejemplo con asteriscos\\*.\r\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
