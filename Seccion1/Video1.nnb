@@ -1,18 +1,31 @@
 {
     "cells": [
         {
-            "language": "typescript",
+            "language": "markdown",
             "source": [
-                "console.log(\"Hola mundo.\");"
+                "**Hello world**"
             ],
             "outputs": []
         },
         {
-            "language": "markdown",
+            "language": "javascript",
             "source": [
-                ""
+                "console.log(\"Hola mundo.\");"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hola mundo.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
