@@ -1,0 +1,11 @@
+{
+    "cells": [
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"Hello world\")"
+            ],
+            "outputs": []
+        }
+    ]
+}
