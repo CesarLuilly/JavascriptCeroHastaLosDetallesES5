@@ -1,60 +1,48 @@
-//** 24 Arguments **//
+//** 25 Sobrecarga de parametros. **//
 //==========================================================
 console.log("*************************************************");
 console.log("** Ejemplo 1 **");
 
-var arguments = 10;
+//  //Funciones que tienen el mismo nombre pero con diferentes
+//  //  parametros.
 
-function miFuncion(){
-    //  //Ojo. todas los elementos en Javascript tienen prototype, 
-    //  //  en este caso esta funcion tiene en su prototype la 
-    //  //  variable arguments.
-    //  //Por lo tanto, deacuerdo a como funcion Javascript, primero 
-    //  //  busca la variable arguments dentro de este contexto de la 
-    //  //  funcion, y si la encuentra lo imprimir, pero si no la encuentra
-    //  //  entonces pasa a buscar a su contexto superior, pero en este caso
-    //  //  como si lo encuentra dentro de las variables de prototype, entonces
-    //  //  la imprime.
-    console.log(arguments);
+//  //Nota importante. Cuando Javascript barre el codigo, lo que 
+//  //  hace es lee la funcion numero1.
+//  //Cuando lee la funcion numero 2 sobreescribe a la funcion 
+//  //  numero 1, y cuando lee la funcion numero 2 sobreescribe 
+//  //  a la funcion numero 2 y por lo tanto solo se queda con 
+//  //  la funcion numero 3.
+function crearProducto(){
+
 }
 
+function crearProducto(nombre){
 
-miFuncion();
-
-console.log("*************************************************");
-console.log("** Ejemplo 2 **");
-
-var arguments = 10;
-
-function miFuncion2(a, b, c, d){
-    //  //Ojo, la variable arguments hace referencia a los valores
-    //  //  que se pasan cuando se manda a invocar la funcion.
-    console.log(arguments);
 }
 
+function crearProducto(nombre, precio){
 
-miFuncion2(10, 20, 30, 40, {}, function(){});
-
-console.log("*************************************************");
-console.log("** Ejemplo 3 **");
-
-//  //Validar  que nuestr funcion necesita a fuerzas los cuatro
-//  //  parametros para poder realizar una operacion matematica.
-//  //Ojo. NaN significa que no es un numero. (not a number)
-
-var arguments = 10;
-
-function miFuncion3(a, b, c, d){
-    if(
-        arguments.length !== 4
-    ){
-        console.error("La funcion necesita 4 parametros.");
-        return;
-    }
-    console.log(a + b + c + d);
 }
 
-miFuncion3(10, 20, 30);
+//  //COMO SOLUCION A ESTE TIPO DE PROBLEMAS.
+function crearProductoNuevo(nombre, precio){
+    nombre = nombre || "Sin nombre";
+    precio = precio || 0;
+    console.log("Producto: ", nombre, " Precio: ", precio);
+}
+
+function crearProducto100(nombre){
+    crearProductoNuevo(nombre, 100);
+}
+
+function crearProductoCamiseta(precio){
+    crearProductoNuevo("Camiseta", precio);
+}
+
+crearProductoNuevo("Lapiz");
+crearProducto100("Corrector");
+crearProductoCamiseta(75);
+
 //==========================================================
 
 //==========================================================
