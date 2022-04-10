@@ -9,6 +9,7 @@ console.log(juan);
 console.log("*************************************************");
 console.log("** Ejemplo 2 **");
 
+//  //Declaramos una funcion para utilizarlo como un objeto.
 function Persona(nombre, apellido){
     this.nombre = nombre;
     this.apellido = apellido;
@@ -19,6 +20,7 @@ function Persona(nombre, apellido){
     }
 }
 
+//  //Utilizamos new para crear el objeto.
 var juan = new Persona("Juan", "Mendoza");
 console.log(juan.imprimirPersona());
 
